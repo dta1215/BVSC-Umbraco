@@ -105,3 +105,9 @@ button.SeeMore:hover {
         background-position-x: -1000px;
     }
 }
+
+.Banner {
+    background-image: url('../Images/Background/Large/Main\ background.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
