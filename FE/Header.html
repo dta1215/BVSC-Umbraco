@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/root.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Libs/jQuery-Plugin-For-Country-Selecter-with-Flags-flagstrap/dist/css/flags.css">
+</head>
+
+<body>
+
+
+    <header class="header__container">
+        <section class="header__top">
+            <div class="container header__top--container">
+                <div class="header__top--right"></div>
+                <div class="header__top--left">
+                    <button class="btn-fill-yellow"><text class="header__top--phoneIcon"><img src="./Images/Icon/call.png" alt="phone icon"></text> 024 3928 8080</button>
+                    <div class="form-group header__search_container">
+                        <input class="header__search--input" type="text" placeholder="Tìm kiếm...">
+                        <img class="header__top--magnifier" src="./Images/Icon/search-normal.png" alt="search icon">
+                    </div>
+                    <!-- <select name="languageSelectOption">
+                        <option value="vi" >&#x1f1fb</option>
+                        <option value="other">Khác</option>
+                    </select> -->
+                    <input id="country_selector" type="text">
+                </div>
+            </div>
+        </section>
+        <section class="header__middle ">
+            <div class="container header__middle--container">
+                <div class="header__logo">
+                    <img src="./Images/Background/Normal/BVS Logo.png" alt="Ảnh logo header">
+                </div>
+                <div class="header__middle--controls">
+                    <a href="#">Bảng giá</a>
+                    <button class="btn btn-primary override-btn-padding">Mở Tài Khoản</button>
+                    <button class="btn btn-outline-primary override-btn-padding">Đăng Nhập B-wise</button>
+                </div>
+            </div>
+        </section>
+        <section class="header__bottom ">
+            <div class="container header__bottom--container">
+                <div class="header__bottom--controls">
+                    <a class="header__boottom--link" href="#">Trang Chủ</a>
+                    <a class="header__boottom--link" href="#">Về BVSC</a>
+                    <a class="header__boottom--link" href="#">Khách Hàng</a>
+                    <a class="header__boottom--link" href="#">Bản Tin Phân Tích</a>
+                    <a class="header__boottom--link" href="#">Quan Hệ Nhà Đầu Tư</a>
+                    <a class="header__boottom--link" href="#">Trách Nhiệm Xã Hội</a>
+                    <a class="header__boottom--link" href="#">Cơ Hội Nghề Nghiệp</a>
+                    <a class="header__boottom--link" href="#">Tin Tức Sự Kiện</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./Libs/country-picker-flags/country-picker-flags/build/css/countrySelect.min.css">
+    <script src="./Libs/country-picker-flags/country-picker-flags/build/js/countrySelect.min.js"></script>
+    <script>
+        $("#country_selector").countrySelect({
+            defaultCountry: "vn",
+            onlyCountries: ['vn', 'us', 'jp'],
+            preferredCountries: [],
+            responsiveDropdown: false,
+            defaultStyling:"inside"
+        });
+        
+        $(function(){
+            
+
+        })
+
+    </script>
+</body>
+
+</html>

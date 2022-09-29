@@ -1,0 +1,120 @@
+:root {
+    /* Background colors */
+    --MainBGColor-Blue: #2D5DF0;
+    --MainBGColor-Yellow: #E4BE00;
+    --MainBGColor-Grey: #F0F2F5;
+
+
+    /* Button radius size */
+    --BtnRadius-Small: 3px;
+    --BtnRadius-Medium: 4px;
+    --BtnRadius-Large: 5px;
+
+    /* Text color */
+    --TxtColor-Red: #FF5E61;
+    --TxtColor-White: #FFFFFF;
+    --TxtColor-Blue: #2D5DF0;
+    --TxtColor-Grey: #767676;
+
+    --TxtSize-root: 16px;
+    /* Article datetime */
+    --TxtSize-14: 14px;
+    /* All header text */
+    --TxtSize-16: 16px;
+    /* Main Background text */
+    --TxtSize-18: 18px;
+    --TxtSize-20: 20px;
+    /* Main tools */
+    --TxtSize-34: 34px;
+    /* Main BG title */
+    --TxtSize-56: 56px;
+    /* font-family: 'SVN-Gilroy' */
+}
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    src: local('SVN-Gilroy'), url('./Font/SVNGilroy\ Light.woff') format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'SVN-Gilroy', sans-serif;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+    text-transform: capitalize;
+}
+
+ol, ul {
+    list-style: none;
+}
+a{
+    color: var(--TxtColor-Blue);
+    text-decoration: none !important;
+    transition: all 0.3 ease;
+}
+a:hover{
+    color: var(--TxtColor-White) !important;
+}
+
+
+@media (min-width: 1460px) {
+    .container {
+        min-width: 1360px !important;
+    }
+}
+
+@media screen (max-width: 1460px) {
+    .container{
+        max-width: 100% !important;
+    }
+}
+
+
+/* Các nút bấm, căn lề dùng chung cho toàn document */
+
+.btnRadius-sm {
+    border-radius: var(--BtnRadius-Small);
+}
+
+.btnRadius {
+    border-radius: var(--BtnRadius-Medium);
+}
+
+.btnRadius-lg {
+    border-radius: var(--BtnRadius-Large);
+}
+
+.btn-fill-yellow {
+    background-color: var(--MainBGColor-Yellow);
+    color: var(--TxtColor-White);
+    padding: 0.5em 1em;
+    border-radius: 24px;
+}
+.btn-fill-lightRed {
+    background-color: var(--TxtColor-Red);
+    color: var(--TxtColor-White);
+}
+.btn-fill-white{
+    background-color: var(--TxtColor-White);
+    color: var(--TxtColor-Red);
+}
+
+.override-btn-padding {
+    padding: 7px 1.5em !important;
+    border-radius: 10px !important;
+}
+
+.font-size--small{
+    font-size: var(--TxtSize-16) !important;
+}
+
