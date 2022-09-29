@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+                
+    <title>BVSC Footers</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'SVN-Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        src: local('SVN-Gilroy'), url('Front/SVNGilroy\ Bold.otf') format('woff');
+    }
+
+    *{
+        font-family: 'SVN-Gilroy', sans-serif;
+    }
+
+    .Banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #0065C0;
+    width: 100%;
+    height: 100vh;
+    }
+
+    .LeftBanner {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
+    .Banner p {
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+    }
+
+    .Banner span {
+        color: #FF5E61;
+    }
+
+    button.Register {
+    background: white;
+    color: #FF5E61;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px solid #FF5E61;
+    font-weight: 700;
+    }
+
+    button.Register:hover {
+        color: white;
+        background: #FF5E61;
+    }
+
+    button.SeeMore {
+    background: white;
+    color: #FF5E61;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px solid #FF5E61;
+    font-weight: 700;
+    margin-left: 15px;
+    }
+
+    button.SeeMore:hover {
+        color: white;
+        background: #FF5E61;
+    }
+
+    .Banner .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        Width: 100%;
+        height: 100px;
+        background:url(/Images/wave.png);
+        background-size: 1000px 100px;
+    }
+    .Banner .wave.wave1{
+        animation: animate 30s linear infinite;
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom:0;
+    }
+
+    .Banner .wave.wave2{
+        animation: animate2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom:10px;
+    }
+
+    .Banner .wave.wave3{
+        animation: animate 15s linear infinite;
+        z-index: 998;
+        opacity: 0.2;
+        animation-delay: -2s;
+        bottom:15px;
+    }
+
+    @keyframes animate {
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: 1000px;
+        }
+    }
+
+    @keyframes animate2 {
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: -1000px;
+        }
+    }
+
+</style>
+
+<body>
+   
+    <div class="Banner">
+        <div class="container">
+            <div class="LeftBanner">
+                <div class="TitleBanner">
+                    <p>Mở Tài Khoản Giao Dịch<br> <span>Mọi Lúc Mọi Nơi</span></p>
+                </div>
+                <div class="ButtonBanner">
+                    <button class="Register">Đăng ký ngay</button>
+                    <button class="SeeMore">Xem chi tiết</button>
+                </div>
+            </div>
+            <div class="WavesBanner">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Example Code -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
+
+</body>
+
+
+</html>
