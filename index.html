@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./docs/flickity.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+</head>
+<style>
+    /* div#SlideSchoolProfile11 {
+        width: 100%;
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    div#SlideSchoolProfile12 {
+        width: 100%;
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 300px;
+    } */
+
+    div#clickImage img {
+        cursor: pointer;
+    }
+
+    div#CompareSchoolRank {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #333333c9;
+        z-index: 99999;
+    }
+
+    div#ContentCompareSchoolRank {
+        width: 90%;
+        margin: auto;
+        height: 95%;
+        position: relative;
+        top: 20px;
+        background: white;
+        border-radius: 10px;
+        overflow: auto;
+    }
+
+    .ExitCompareSchoolRank {
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    label.titleBold {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    label.titleSmall {
+        font-size: 14px;
+    }
+
+    .padingleftright {
+        padding: 0 20px;
+    }
+
+    /* CSS Flexkity: */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+    }
+
+    .carousel {
+        background: #FAFAFA;
+        margin-bottom: 20px;
+    }
+
+    .carousel-cell {
+        width: 66%;
+        max-height: 400px;
+        margin-right: 10px;
+        background: #8C8;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
+
+    /* cell number */
+    .carousel-cell img:before {
+        display: block;
+        text-align: center;
+        content: counter(carousel-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 22px;
+        font-size: 18px;
+        border: 1px solid #DDD;
+        border-radius: 6px;
+        background-color: #FAFAFA;
+        background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1))
+    }
+
+    .button:hover {
+        background-color: white;
+        border-color: #BBB;
+        cursor: pointer;
+    }
+
+    .button:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+        background-color: white;
+    }
+
+    .button:active {
+        background-color: #EEE;
+        box-shadow: inset 0 2px 10px hsla(0, 0%, 0%, 0.3);
+    }
+
+    .button.is-selected {
+        background-color: #09F;
+        color: white;
+    }
+
+    /* ---- button-group ---- */
+
+    .button-group {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .button-group:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .button-group .button {
+        float: left;
+        border-radius: 0;
+        border-right-width: 0;
+    }
+
+    .button-group .button:first-child {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .button-group .button:last-child {
+        border-radius: 0 6px 6px 0;
+        border-right-width: 1px;
+    }
+
+    /* ---- button-row ---- */
+
+    .button-row {
+        text-align: center;
+    }
+
+    /* #SlideSchoolProfile11 img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    } */
+    .carousel img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div id="clickImage">
+        <img src="./Images/fuckblackgoku.png" width="100px" height="100px">
+    </div>
+
+    <!-- Example Code -->
+    <div id="CompareSchoolRank">
+        <button id="cancleSlider">Cancle</button>
+        <button id="appendSlider">Append</button>
+        <div id="ContentCompareSchoolRank">
+            <div class="ExitCompareSchoolRank">
+                <button id="btnExitSchoolRank" class="btn btn-outline-danger">Thoát</button>
+            </div>
+            <div class="row padingleftright">
+                <div class="col-md-6">
+                    <label class="titleBold">Học bạ lớp 11</label>
+                    <div id="SlideSchoolProfile11">
+                        <div class="carousel" data-flickity='{ "fullscreen": true }'>
+                            <!-- <div class="carousel-cell">
+                                <img src="./Images/hocba1.jpg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="./Images/hocba2.jpg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="./Images/hocba3.jpg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="./Images/hocba4.webp">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="./Images/hocba2.jpg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="./Images/hocba1.jpg">
+                            </div> -->
+                        </div>
+
+                        <div class="button-row">
+                            <button class="button button--previous">&larr;</button>
+                            <div class="button-group button-group--cells">
+                                <!-- <button class="button is-selected">1</button>
+                                <button class="button">2</button>
+                                <button class="button">3</button>
+                                <button class="button">4</button>
+                                <button class="button">5</button> -->
+                            </div>
+                            <button class="button button--next">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- End Example Code -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@2/fullscreen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+        integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+        integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/flickity-fullscreen@2/fullscreen.js"></script>
+    <script>
+        //JS Flexkity:
+
+
+        // Flickity instance
+        // var flkty = $carousel.data('flickity');
+        // elements
+        // var $cellButtonGroup = $('.button-group--cells');
+        // var $cellButtons = $cellButtonGroup.find('.button');
+
+        // // update selected cellButtons
+        // $carousel.on('select.flickity', function () {
+        //     $cellButtons.filter('.is-selected')
+        //         .removeClass('is-selected');
+        //     $cellButtons.eq(flkty.selectedIndex)
+        //         .addClass('is-selected');
+        // });
+
+        // // select cell on button click
+        // $cellButtonGroup.on('click', '.button', function () {
+        //     var index = $(this).index();
+        //     $carousel.flickity('select', index);
+        // });
+        // // previous
+        // $('.button--previous').on('click', function () {
+        //     $carousel.flickity('previous');
+        // });
+        // // next
+        // $('.button--next').on('click', function () {
+        //     $carousel.flickity('next');
+        // });
+
+
+        $(document).ready(function () {
+            LoadImage()
+        })
+
+        $("#cancleSlider").click(() => {
+            $("#SlideSchoolProfile11 .flickity-slider").empty()
+            $(".carousel .flickity-page-dots").empty()
+        })
+        $("#appendSlider").click(() => {
+            LoadImage()
+        })
+        
+        var $carousel = $('.carousel').flickity()
+
+        function LoadImage() {
+            let data = ["./Images/hocba1.jpg", "./Images/hocba2.jpg", "./Images/hocba3.jpg", "./Images/hocba4.webp", "./Images/hocba2.jpg", "./Images/hocba1.jpg"]
+            let resHTML = data.map((src) => {
+                return `<div class="carousel-cell">
+                            <img src="${src}">
+                        </div>`
+            })
+
+            $carousel.flickity("destroy")
+            $carousel = $('.carousel').flickity({
+                pageDots: true,
+                imagesLoaded: true,
+                fullscreen: true
+            })
+            // $("#SlideSchoolProfile11 .flickity-slider").empty()
+            // $(".carousel .flickity-page-dots").empty()
+            $('.carousel').flickity('append', $(`${resHTML}`));
+            $carousel.flickity('imagesLoaded')
+        }
+
+        $(document).delegate("#clickImage img", "click", () => {
+            $("#CompareSchoolRank").show()
+            $('.carousel').flickity("resize");
+        })
+
+        $(document).delegate("#btnExitSchoolRank", "click", () => {
+            $("#CompareSchoolRank").hide()
+        })
+
+
+
+
+    </script>
+
+</body>
+<style>
+    /* fullscreen */
+    .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+    }
+</style>
+
+</html>
