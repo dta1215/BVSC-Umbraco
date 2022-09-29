@@ -42,6 +42,7 @@
     right: 0;
     transform: translate(-50%, -50%);
 }
+
 #country_selector{
     display: none;
 }
@@ -79,7 +80,9 @@
 .header__bottom{
     height: 52px;
     background-color: var(--MainBGColor-Blue);
-    border-bottom: solid white 1px;
+    /* border-bottom: solid white 1px; */
+    /* box-shadow: 0 4px 1px 1px #252525f7; */
+    box-shadow: 0 14px 2px 1px #044784;
 }
 .header__bottom--container {
     height: 100%;

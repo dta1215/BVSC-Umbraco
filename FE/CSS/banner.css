@@ -1,0 +1,107 @@
+.Banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #0065C0;
+    width: 100%;
+    height: 100vh;
+}
+
+.LeftBanner {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.Banner p {
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.Banner span {
+    color: #FF5E61;
+}
+
+button.Register {
+    background: white;
+    color: #FF5E61;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px solid #FF5E61;
+    font-weight: 700;
+}
+
+button.Register:hover {
+    color: white;
+    background: #FF5E61;
+}
+
+button.SeeMore {
+    background: white;
+    color: #FF5E61;
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: 2px solid #FF5E61;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+button.SeeMore:hover {
+    color: white;
+    background: #FF5E61;
+}
+
+.Banner .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    Width: 100%;
+    height: 100px;
+    background: url(../Images/Background/Large/wave.png);
+    background-size: 1000px 100px;
+}
+
+.Banner .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.Banner .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.Banner .wave.wave3 {
+    animation: animate 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}

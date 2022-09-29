@@ -1,9 +1,8 @@
 :root {
     /* Background colors */
-    --MainBGColor-Blue: #2D5DF0;
+    --MainBGColor-Blue: #0065C0;
     --MainBGColor-Yellow: #E4BE00;
     --MainBGColor-Grey: #F0F2F5;
-
 
     /* Button radius size */
     --BtnRadius-Small: 3px;
@@ -13,7 +12,7 @@
     /* Text color */
     --TxtColor-Red: #FF5E61;
     --TxtColor-White: #FFFFFF;
-    --TxtColor-Blue: #2D5DF0;
+    --TxtColor-Blue: #0065C0;
     --TxtColor-Grey: #767676;
 
     --TxtSize-root: 16px;
